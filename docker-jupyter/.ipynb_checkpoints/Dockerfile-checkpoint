@@ -16,7 +16,10 @@ RUN python3 module.py
 #WORKDIR /src/notebooks
 WORKDIR notebooks
 
-#RUN jupyter notebook --generate-config
-#RUN echo "c.NotebookApp.password='sha1:f238bbafb661:88e7cda084cc30fcce5e93f22226401590545804'">>/root/.jupyter/jupyter_notebook_config.py
+# Add Tini. Tini operates as a process subreaper for jupyter. This prevents kernel crashes.
+ENV TINI_VERSION v0.6.0
+ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /usr/bin/tini
+RUN chmod +x /usr/bin/tini
+ENTRYPOINT ["/usr/bin/tini", "--"]
 
 CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
