@@ -11,8 +11,7 @@ RUN pip3 install -r requirements.txt
 RUN pip3 install jupyter
 
 RUN python3 module.py
-#RUN rm /src/data/ 
-#raw_data.csv
+RUN rm /src/data/raw_data.csv
 WORKDIR /src/notebooks
 
 #RUN jupyter notebook --generate-config
