@@ -29,6 +29,8 @@ hs_err_pid*
 .ipynb_checkpoints/*
 */.ipynb_checkpoints/*
 */.ipynb_checkpoints/*.ipynb
+**/*.ipynb_checkpoints/
 
 #other
 .DS_Store
+*.DS_Store
