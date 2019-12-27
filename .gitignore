@@ -25,5 +25,10 @@ hs_err_pid*
 # Jupyter Notebook
 .ipynb_checkpoints
 *.ipynb_checkpoints
+/.ipynb_checkpoints
+.ipynb_checkpoints/*
 */.ipynb_checkpoints/*
 */.ipynb_checkpoints/*.ipynb
+
+#other
+.DS_Store
