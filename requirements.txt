@@ -155,7 +155,7 @@ lazy-object-proxy==1.4.3
 lda2vec==0.16.10
 liac-arff==2.4.0
 libarchive-c==2.8
-lief==0.9.0
+lief==0.12.1
 lightgbm==2.2.3
 lime==0.1.1.36
 line==0.8.2
