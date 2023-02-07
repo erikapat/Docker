@@ -60,7 +60,7 @@ conda-verify==3.4.2
 ConfigSpace==0.4.11
 confuse==1.0.0
 contextlib2==0.6.0.post1
-cryptography==2.8
+cryptography==39.0.1
 cufflinks==0.16
 curve==0.1.0
 cycler==0.10.0
